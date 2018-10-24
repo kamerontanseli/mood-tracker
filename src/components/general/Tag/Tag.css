@@ -1,0 +1,12 @@
+.Tag {
+  padding: 5px 10px;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 4px;
+  background-color: #eee;
+  color: #333;
+}
+
+.Tag:last-child {
+  margin-right: 0;
+}

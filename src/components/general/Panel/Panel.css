@@ -1,0 +1,7 @@
+.Panel {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px -1px #eee;
+}

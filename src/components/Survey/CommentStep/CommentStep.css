@@ -1,0 +1,18 @@
+.CommentStep-title {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.CommentStep-input {
+  max-width: 450px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.CommentStep-controls {
+  max-width: 200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

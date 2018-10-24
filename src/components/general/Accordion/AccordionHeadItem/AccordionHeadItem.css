@@ -1,0 +1,15 @@
+.AccordionHeadItem {
+  border-right: 1px solid #eee;
+  padding: 0px 10px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.AccordionHeadItem:first-child {
+  padding-left: 0px;
+}
+
+.AccordionHeadItem:last-child {
+  border-right: none;
+  padding-right: 0px;
+}

@@ -1,0 +1,36 @@
+.Navigation {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px -1px #eee;
+  padding: 20px;
+}
+
+.Navigation-brand {
+  flex-grow: 1;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.Navigation-link {
+  margin-right: 20px;
+}
+
+.Navigation-link:last-child {
+  margin-right: 0px;
+}
+
+.Navigation-brand > a, .Navigation-link > a {
+  text-decoration: none;
+  color: #333;
+  padding-bottom: 5px;
+}
+
+.Navigation-link > a:hover {
+  border-bottom: 1px solid #000;
+}

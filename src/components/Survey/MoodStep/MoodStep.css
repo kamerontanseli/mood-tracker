@@ -1,0 +1,14 @@
+.MoodStep-title {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.MoodStep-input {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.MoodStep-controls {
+  text-align: center;
+}
