@@ -6,7 +6,7 @@ const Navigation = () => (
   <nav>
     <ul className="Navigation">
       <li className="Navigation-brand">
-        <Link to="/">unmind</Link>
+        <Link to="/">Moodr</Link>
       </li>
       <li className="Navigation-link">
         <Link to="/">Insights</Link>

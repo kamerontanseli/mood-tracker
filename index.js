@@ -1,10 +1,34 @@
-const express = require("express");
-const path = require("path");
+import "ignore-styles";
+import fs from "fs";
+import express from "express";
+import bodyParser from "body-parser";
+import React from "react";
+import ReactDOMServer from "react-dom/server";
+import { StaticRouter } from "react-router-dom";
+import App from "./src/components/App";
+
 const app = express();
-const bodyParser = require("body-parser");
 const port = 3000;
 
 const insights = [];
+
+function handleRender(req, res) {
+  const context = {};
+  const app = ReactDOMServer.renderToString(
+    <StaticRouter location={req.url} context={context}>
+      <App />
+    </StaticRouter>
+  );
+
+  fs.readFile("./public/index.html", "utf8", function(err, data) {
+    if (err) throw err;
+    const document = data.replace(
+      /<div id="app"><\/div>/,
+      `<div id="app">${app}</div>`
+    );
+    res.send(document);
+  });
+}
 
 app.use(express.static("public"));
 app.use(bodyParser.json());
@@ -22,10 +46,6 @@ app.post("/api/insights", (req, res) => {
   res.send({ done: true });
 });
 
-app.get("/", (req, res) =>
-  res.sendFile(path.join(__dirname, "public/index.html"))
-);
-
-app.get("/*", (req, res) => res.sendFile(path.join(__dirname, "public/index.html")));
+app.get("*", handleRender);
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
