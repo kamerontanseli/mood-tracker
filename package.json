@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "babel-node index.js",
+    "start:dev": "nodemon --exec babel-node index.js",
     "start:webpack": "webpack --config webpack.config.js"
   },
   "dependencies": {

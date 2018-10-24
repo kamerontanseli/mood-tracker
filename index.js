@@ -20,7 +20,7 @@ function handleRender(req, res) {
     </StaticRouter>
   );
 
-  fs.readFile("./public/index.html", "utf8", function(err, data) {
+  fs.readFile("./public/app.html", "utf8", function(err, data) {
     if (err) throw err;
     const document = data.replace(
       /<div id="app"><\/div>/,
