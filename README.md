@@ -1,5 +1,7 @@
 # mood-tracker
 
+![](https://raw.githubusercontent.com/kamerontanseli/mood-tracker/master/sc.png)
+
 ## Getting started
 
 Install all dependencies
