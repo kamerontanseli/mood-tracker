@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render should render 1`] = `
+Array [
+  <progress
+    className="Progress"
+    max={7}
+    value={2}
+  />,
+  <h2
+    className="Header2"
+  >
+    Your average mood is 
+    <strong>
+      Bad
+    </strong>
+  </h2>,
+]
+`;

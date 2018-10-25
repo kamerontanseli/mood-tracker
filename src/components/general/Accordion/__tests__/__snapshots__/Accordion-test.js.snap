@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render should render 1`] = `
+<div
+  className="Panel"
+>
+  <h1>
+    Hello world
+  </h1>
+</div>
+`;

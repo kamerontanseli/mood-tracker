@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render should render 1`] = `
+<nav>
+  <ul
+    className="Navigation"
+  >
+    <li
+      className="Navigation-brand"
+    >
+      <a
+        to="/"
+      >
+        Moodr
+      </a>
+    </li>
+    <li
+      className="Navigation-link"
+    >
+      <a
+        to="/"
+      >
+        Insights
+      </a>
+    </li>
+    <li
+      className="Navigation-link"
+    >
+      <a
+        to="/survey"
+      >
+        Add Insight
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
