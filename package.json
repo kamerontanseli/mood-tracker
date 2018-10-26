@@ -12,6 +12,9 @@
     "moduleNameMapper": {
       "\\.(css|less|scss|sass)$": "identity-obj-proxy"
     },
+    "moduleFileExtensions": [
+      "js"
+    ],
     "setupFiles": [
       "./src/test.config.js"
     ]
