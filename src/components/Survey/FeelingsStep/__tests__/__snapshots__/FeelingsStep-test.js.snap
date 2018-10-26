@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Feeling should render 1`] = `
+Array [
+  <input
+    id="hello world"
+    name="hello world"
+    type="checkbox"
+  />,
+  <label
+    className="FeelingsStep-grid-label"
+    htmlFor="hello world"
+  >
+    hello world
+  </label>,
+]
+`;
+
+exports[`render should render 1`] = `
+<div
+  className="Panel"
+>
+  <div
+    className="FeelingsStep"
+  >
+    <div
+      className="FeelingsStep-title"
+    >
+      <h1
+        className="Header1"
+      >
+        What emotions are you feeling?
+      </h1>
+    </div>
+    <div
+      className="FeelingsStep-grid"
+    >
+      <input
+        checked={false}
+        id="depressed"
+        name="depressed"
+        type="checkbox"
+      />
+      <label
+        className="FeelingsStep-grid-label"
+        htmlFor="depressed"
+      >
+        depressed
+      </label>
+      <input
+        checked={false}
+        id="optimistic"
+        name="optimistic"
+        type="checkbox"
+      />
+      <label
+        className="FeelingsStep-grid-label"
+        htmlFor="optimistic"
+      >
+        optimistic
+      </label>
+      <input
+        checked={false}
+        id="bored"
+        name="bored"
+        type="checkbox"
+      />
+      <label
+        className="FeelingsStep-grid-label"
+        htmlFor="bored"
+      >
+        bored
+      </label>
+      <input
+        checked={false}
+        id="happy"
+        name="happy"
+        type="checkbox"
+      />
+      <label
+        className="FeelingsStep-grid-label"
+        htmlFor="happy"
+      >
+        happy
+      </label>
+      <input
+        checked={false}
+        id="woeful"
+        name="woeful"
+        type="checkbox"
+      />
+      <label
+        className="FeelingsStep-grid-label"
+        htmlFor="woeful"
+      >
+        woeful
+      </label>
+      <input
+        checked={false}
+        id="playful"
+        name="playful"
+        type="checkbox"
+      />
+      <label
+        className="FeelingsStep-grid-label"
+        htmlFor="playful"
+      >
+        playful
+      </label>
+      <input
+        checked={false}
+        id="peaceful"
+        name="peaceful"
+        type="checkbox"
+      />
+      <label
+        className="FeelingsStep-grid-label"
+        htmlFor="peaceful"
+      >
+        peaceful
+      </label>
+    </div>
+    <div
+      className="FeelingsStep-controls"
+    >
+      <button
+        className="Button"
+        data-test="back"
+      >
+        Back
+      </button>
+      <button
+        className="Button"
+        data-test="next"
+        disabled={true}
+      >
+        Continue
+      </button>
+    </div>
+  </div>
+</div>
+`;

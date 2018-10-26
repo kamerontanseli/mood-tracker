@@ -41,15 +41,18 @@ export default class Survey extends React.Component {
   nextStep = () => this.setState(state => ({ step: state.step + 1 }));
   prevStep = () => this.setState(state => ({ step: state.step - 1 }));
 
-  submission = () => {
-    fetch("/api/insights/", {
+  submission = ()=> {
+    const options = {
       method: "post",
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json"
       },
       body: JSON.stringify(this.state.data)
-    }).then(response => this.nextStep());
+    };
+    return fetch("/api/insights/", options)
+      .then(response => this.nextStep())
+      .catch(e => console.error(e))
   };
 
   render() {

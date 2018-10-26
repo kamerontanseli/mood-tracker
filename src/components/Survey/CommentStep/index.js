@@ -21,8 +21,8 @@ const CommentStep = ({ value, onChange, onNext, onBack }) => (
         />
       </div>
       <div className="CommentStep-controls">
-        <Button onClick={onBack}>Back</Button>
-        <Button onClick={onNext}>Continue</Button>
+        <Button data-test="back" onClick={onBack}>Back</Button>
+        <Button data-test="next" onClick={onNext}>Continue</Button>
       </div>
     </div>
   </Panel>

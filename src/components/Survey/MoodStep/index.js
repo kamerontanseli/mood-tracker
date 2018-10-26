@@ -18,7 +18,7 @@ const MoodStep = ({ value, onChange, onNext }) => (
         <RangeInput max={7} min={1} value={value} onChange={onChange} />
       </div>
       <div className="MoodStep-controls">
-        <Button onClick={onNext}>Continue</Button>
+        <Button data-test="next" onClick={onNext}>Continue</Button>
       </div>
     </div>
   </Panel>

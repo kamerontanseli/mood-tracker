@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render should render 1`] = `
+<div>
+  <h1>
+    404 Not Found
+  </h1>
+  <a
+    className="switch"
+    to="/"
+  >
+    Back to Home
+  </a>
+</div>
+`;

@@ -18,11 +18,9 @@ export default class Insights extends React.Component {
 
   fetchData() {
     this.setState({ loading: true });
-    fetch("/api/insights/")
+    return fetch("/api/insights/")
       .then(response => response.json())
-      .then(response => {
-        this.setState({ loading: false, insights: response });
-      });
+      .then(response => this.setState({ loading: false, insights: response }));
   }
 
   render() {
@@ -32,13 +30,17 @@ export default class Insights extends React.Component {
         <Navigation />
 
         <Panel>
-          {loading ? <p>Loading...</p> : <InsightTotal insights={insights} />}
+          {loading ? (
+            <p className="loading">Loading...</p>
+          ) : (
+            <InsightTotal insights={insights} />
+          )}
         </Panel>
 
         <Header3>Your previous entries:</Header3>
 
         {loading ? (
-          <p>Loading...</p>
+          <p className="loading">Loading...</p>
         ) : (
           insights.map((insight, index) => (
             <InsightRow key={index} insight={insight} />

@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render should render 1`] = `
+<div
+  className="Panel"
+>
+  <div
+    className="CommentStep"
+  >
+    <div
+      className="CommentStep-title"
+    >
+      <h1
+        className="Header1"
+      >
+        Anything else to add?
+      </h1>
+    </div>
+    <div
+      className="CommentStep-input"
+    >
+      <textarea
+        className="TextArea"
+        cols="30"
+        placeholder="Enter any extra notes about how you feel here..."
+        rows="10"
+        value="hello world"
+      />
+    </div>
+    <div
+      className="CommentStep-controls"
+    >
+      <button
+        className="Button"
+        data-test="back"
+      >
+        Back
+      </button>
+      <button
+        className="Button"
+        data-test="next"
+      >
+        Continue
+      </button>
+    </div>
+  </div>
+</div>
+`;

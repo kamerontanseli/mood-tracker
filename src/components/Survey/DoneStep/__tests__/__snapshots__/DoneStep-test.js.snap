@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DoneStep should render 1`] = `
+<div
+  className="Panel"
+>
+  <div
+    className="DoneStep"
+  >
+    <div
+      className="DoneStep-title"
+    >
+      <h1
+        className="Header1"
+      >
+        Survey completed!
+      </h1>
+    </div>
+    <div
+      className="DoneStep-controls"
+    >
+      <a
+        to="/"
+      >
+        Go to your insights
+      </a>
+    </div>
+  </div>
+</div>
+`;

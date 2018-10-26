@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render should render 1`] = `
+<div
+  className="Panel"
+>
+  <div
+    className="AccordionHead"
+  >
+    <div
+      className="AccordionHeadItem"
+    >
+      Oct
+       
+      25
+    </div>
+    <div
+      className="AccordionHeadItem"
+    >
+      23
+      :
+      49
+    </div>
+    <div
+      className="AccordionHeadItem"
+    >
+      Good
+    </div>
+    <div
+      className="AccordionHeadItem"
+    >
+      <button
+        className="Button"
+        onClick={[Function]}
+      >
+        <span>
+          ↓
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;

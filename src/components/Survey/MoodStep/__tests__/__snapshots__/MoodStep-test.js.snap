@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render should render 1`] = `
+<div
+  className="Panel"
+>
+  <div
+    className="MoodStep"
+  >
+    <div
+      className="MoodStep-title"
+    >
+      <h1
+        className="Header1"
+      >
+        How do you feel?
+      </h1>
+      <h2
+        className="Header2"
+      >
+        Terrible
+      </h2>
+    </div>
+    <div
+      className="MoodStep-input"
+    >
+      <input
+        className="RangeInput"
+        max={7}
+        min={1}
+        type="range"
+        value={1}
+      />
+    </div>
+    <div
+      className="MoodStep-controls"
+    >
+      <button
+        className="Button"
+        data-test="next"
+      >
+        Continue
+      </button>
+    </div>
+  </div>
+</div>
+`;
